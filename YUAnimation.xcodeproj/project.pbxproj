@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3482BC21E4489DD00FEFEE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3482BC11E4489DD00FEFEE8 /* main.m */; };
+		C3482BC51E4489DD00FEFEE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3482BC41E4489DD00FEFEE8 /* AppDelegate.m */; };
+		C3482BCB1E4489DD00FEFEE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3482BC91E4489DD00FEFEE8 /* Main.storyboard */; };
+		C3482BCD1E4489DD00FEFEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3482BCC1E4489DD00FEFEE8 /* Assets.xcassets */; };
+		C3482BD01E4489DD00FEFEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3482BCE1E4489DD00FEFEE8 /* LaunchScreen.storyboard */; };
+		C3482BD91E448B2400FEFEE8 /* YUMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3482BD81E448B2400FEFEE8 /* YUMainTableViewController.m */; };
+		C369CC711E4570C700A8FECF /* YUAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C369CC701E4570C700A8FECF /* YUAnimationViewController.m */; };
+		C369CC741E4576E900A8FECF /* YUReplicatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C369CC731E4576E900A8FECF /* YUReplicatorAnimation.m */; };
+		C369CC771E45870200A8FECF /* YULoadingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C369CC761E45870200A8FECF /* YULoadingLabel.m */; };
+		C369CC7C1E4588CD00A8FECF /* EmitterLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C369CC791E4588CD00A8FECF /* EmitterLayerView.m */; };
+		C369CC7D1E4588CD00A8FECF /* SnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C369CC7B1E4588CD00A8FECF /* SnowView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C3482BBD1E4489DD00FEFEE8 /* YUAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YUAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3482BC11E4489DD00FEFEE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3482BC31E4489DD00FEFEE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3482BC41E4489DD00FEFEE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3482BCA1E4489DD00FEFEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3482BCC1E4489DD00FEFEE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3482BCF1E4489DD00FEFEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3482BD11E4489DD00FEFEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3482BD71E448B2400FEFEE8 /* YUMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUMainTableViewController.h; sourceTree = "<group>"; };
+		C3482BD81E448B2400FEFEE8 /* YUMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUMainTableViewController.m; sourceTree = "<group>"; };
+		C369CC6F1E4570C700A8FECF /* YUAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUAnimationViewController.h; sourceTree = "<group>"; };
+		C369CC701E4570C700A8FECF /* YUAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUAnimationViewController.m; sourceTree = "<group>"; };
+		C369CC721E4576E900A8FECF /* YUReplicatorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUReplicatorAnimation.h; sourceTree = "<group>"; };
+		C369CC731E4576E900A8FECF /* YUReplicatorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUReplicatorAnimation.m; sourceTree = "<group>"; };
+		C369CC751E45870200A8FECF /* YULoadingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YULoadingLabel.h; sourceTree = "<group>"; };
+		C369CC761E45870200A8FECF /* YULoadingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YULoadingLabel.m; sourceTree = "<group>"; };
+		C369CC781E4588CD00A8FECF /* EmitterLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmitterLayerView.h; sourceTree = "<group>"; };
+		C369CC791E4588CD00A8FECF /* EmitterLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmitterLayerView.m; sourceTree = "<group>"; };
+		C369CC7A1E4588CD00A8FECF /* SnowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowView.h; sourceTree = "<group>"; };
+		C369CC7B1E4588CD00A8FECF /* SnowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnowView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3482BBA1E4489DD00FEFEE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3482BB41E4489DC00FEFEE8 = {
+			isa = PBXGroup;
+			children = (
+				C3482BBF1E4489DD00FEFEE8 /* YUAnimation */,
+				C3482BBE1E4489DD00FEFEE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3482BBE1E4489DD00FEFEE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3482BBD1E4489DD00FEFEE8 /* YUAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3482BBF1E4489DD00FEFEE8 /* YUAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C3482BC31E4489DD00FEFEE8 /* AppDelegate.h */,
+				C3482BC41E4489DD00FEFEE8 /* AppDelegate.m */,
+				C3482BD71E448B2400FEFEE8 /* YUMainTableViewController.h */,
+				C3482BD81E448B2400FEFEE8 /* YUMainTableViewController.m */,
+				C369CC6F1E4570C700A8FECF /* YUAnimationViewController.h */,
+				C369CC701E4570C700A8FECF /* YUAnimationViewController.m */,
+				C369CC721E4576E900A8FECF /* YUReplicatorAnimation.h */,
+				C369CC731E4576E900A8FECF /* YUReplicatorAnimation.m */,
+				C369CC751E45870200A8FECF /* YULoadingLabel.h */,
+				C369CC761E45870200A8FECF /* YULoadingLabel.m */,
+				C369CC781E4588CD00A8FECF /* EmitterLayerView.h */,
+				C369CC791E4588CD00A8FECF /* EmitterLayerView.m */,
+				C369CC7A1E4588CD00A8FECF /* SnowView.h */,
+				C369CC7B1E4588CD00A8FECF /* SnowView.m */,
+				C3482BC91E4489DD00FEFEE8 /* Main.storyboard */,
+				C3482BCC1E4489DD00FEFEE8 /* Assets.xcassets */,
+				C3482BCE1E4489DD00FEFEE8 /* LaunchScreen.storyboard */,
+				C3482BD11E4489DD00FEFEE8 /* Info.plist */,
+				C3482BC01E4489DD00FEFEE8 /* Supporting Files */,
+			);
+			path = YUAnimation;
+			sourceTree = "<group>";
+		};
+		C3482BC01E4489DD00FEFEE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3482BC11E4489DD00FEFEE8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3482BBC1E4489DD00FEFEE8 /* YUAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3482BD41E4489DD00FEFEE8 /* Build configuration list for PBXNativeTarget "YUAnimation" */;
+			buildPhases = (
+				C3482BB91E4489DD00FEFEE8 /* Sources */,
+				C3482BBA1E4489DD00FEFEE8 /* Frameworks */,
+				C3482BBB1E4489DD00FEFEE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YUAnimation;
+			productName = YUAnimation;
+			productReference = C3482BBD1E4489DD00FEFEE8 /* YUAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3482BB51E4489DC00FEFEE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YU;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = animation.com;
+				TargetAttributes = {
+					C3482BBC1E4489DD00FEFEE8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BM238LXE9L;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C3482BB81E4489DC00FEFEE8 /* Build configuration list for PBXProject "YUAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3482BB41E4489DC00FEFEE8;
+			productRefGroup = C3482BBE1E4489DD00FEFEE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3482BBC1E4489DD00FEFEE8 /* YUAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3482BBB1E4489DD00FEFEE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3482BD01E4489DD00FEFEE8 /* LaunchScreen.storyboard in Resources */,
+				C3482BCD1E4489DD00FEFEE8 /* Assets.xcassets in Resources */,
+				C3482BCB1E4489DD00FEFEE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3482BB91E4489DD00FEFEE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3482BC51E4489DD00FEFEE8 /* AppDelegate.m in Sources */,
+				C369CC7C1E4588CD00A8FECF /* EmitterLayerView.m in Sources */,
+				C369CC771E45870200A8FECF /* YULoadingLabel.m in Sources */,
+				C3482BC21E4489DD00FEFEE8 /* main.m in Sources */,
+				C3482BD91E448B2400FEFEE8 /* YUMainTableViewController.m in Sources */,
+				C369CC741E4576E900A8FECF /* YUReplicatorAnimation.m in Sources */,
+				C369CC711E4570C700A8FECF /* YUAnimationViewController.m in Sources */,
+				C369CC7D1E4588CD00A8FECF /* SnowView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C3482BC91E4489DD00FEFEE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3482BCA1E4489DD00FEFEE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3482BCE1E4489DD00FEFEE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3482BCF1E4489DD00FEFEE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3482BD21E4489DD00FEFEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3482BD31E4489DD00FEFEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3482BD51E4489DD00FEFEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BM238LXE9L;
+				INFOPLIST_FILE = YUAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaoxin.YUAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3482BD61E4489DD00FEFEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BM238LXE9L;
+				INFOPLIST_FILE = YUAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaoxin.YUAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3482BB81E4489DC00FEFEE8 /* Build configuration list for PBXProject "YUAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3482BD21E4489DD00FEFEE8 /* Debug */,
+				C3482BD31E4489DD00FEFEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3482BD41E4489DD00FEFEE8 /* Build configuration list for PBXNativeTarget "YUAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3482BD51E4489DD00FEFEE8 /* Debug */,
+				C3482BD61E4489DD00FEFEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3482BB51E4489DC00FEFEE8 /* Project object */;
+}
