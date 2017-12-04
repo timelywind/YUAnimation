@@ -69,24 +69,24 @@
 
 // 圆圈动画 波纹
 + (CALayer *)replicatorLayer_Circle{
-    CAShapeLayer *shape = [CAShapeLayer layer];
-    shape.frame = CGRectMake(0, 0, 80, 80);
-    shape.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, 80, 80)].CGPath;
-    shape.fillColor = [UIColor redColor].CGColor;
-    shape.opacity = 0.0;
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.frame = CGRectMake(0, 0, 80, 80);
+    shapeLayer.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, 80, 80)].CGPath;
+    shapeLayer.fillColor = [UIColor redColor].CGColor;
+    shapeLayer.opacity = 0.0;
     
     CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
     animationGroup.animations = @[[self alphaAnimation],[self scaleAnimation]];
     animationGroup.duration = 4.0;
     animationGroup.autoreverses = NO;
     animationGroup.repeatCount = HUGE;
-    [shape addAnimation:animationGroup forKey:@"animationGroup"];
+    [shapeLayer addAnimation:animationGroup forKey:@"animationGroup"];
     
     CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
     replicatorLayer.frame = CGRectMake(0, 0, 80, 80);
     replicatorLayer.instanceDelay = 0.5;
     replicatorLayer.instanceCount = 8;
-    [replicatorLayer addSublayer:shape];
+    [replicatorLayer addSublayer:shapeLayer];
     return replicatorLayer;
 }
 
@@ -94,18 +94,18 @@
 + (CALayer *)replicatorLayer_Wave{
     CGFloat between = 5.0;
     CGFloat radius = (100-2*between)/3;
-    CAShapeLayer *shape = [CAShapeLayer layer];
-    shape.frame = CGRectMake(0, (100-radius)/2, radius, radius);
-    shape.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius, radius)].CGPath;
-    shape.fillColor = [UIColor redColor].CGColor;
-    [shape addAnimation:[self scaleAnimation1] forKey:@"scaleAnimation"];
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.frame = CGRectMake(0, (100-radius)/2, radius, radius);
+    shapeLayer.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius, radius)].CGPath;
+    shapeLayer.fillColor = [UIColor redColor].CGColor;
+    [shapeLayer addAnimation:[self scaleAnimation1] forKey:@"scaleAnimation"];
     
     CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
     replicatorLayer.frame = CGRectMake(0, 0, 100, 100);
     replicatorLayer.instanceDelay = 0.2;
     replicatorLayer.instanceCount = 3;
     replicatorLayer.instanceTransform = CATransform3DMakeTranslation(between*2+radius,0,0);
-    [replicatorLayer addSublayer:shape];
+    [replicatorLayer addSublayer:shapeLayer];
     
     return replicatorLayer;
 }
@@ -114,13 +114,13 @@
 + (CALayer *)replicatorLayer_Triangle{
     CGFloat radius = 100/4;
     CGFloat transX = 100 - radius;
-    CAShapeLayer *shape = [CAShapeLayer layer];
-    shape.frame = CGRectMake(0, 0, radius, radius);
-    shape.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius, radius)].CGPath;
-    shape.strokeColor = [UIColor redColor].CGColor;
-    shape.fillColor = [UIColor redColor].CGColor;
-    shape.lineWidth = 1;
-    [shape addAnimation:[self rotationAnimation:transX] forKey:@"rotateAnimation"];
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.frame = CGRectMake(0, 0, radius, radius);
+    shapeLayer.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius, radius)].CGPath;
+    shapeLayer.strokeColor = [UIColor redColor].CGColor;
+    shapeLayer.fillColor = [UIColor redColor].CGColor;
+    shapeLayer.lineWidth = 1;
+    [shapeLayer addAnimation:[self rotationAnimation:transX] forKey:@"rotateAnimation"];
     
     CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
     replicatorLayer.frame = CGRectMake(0, 0, radius, radius);
@@ -130,7 +130,7 @@
     trans3D = CATransform3DTranslate(trans3D, transX, 0, 0);
     trans3D = CATransform3DRotate(trans3D, 120.0*M_PI/180.0, 0.0, 0.0, 1.0);
     replicatorLayer.instanceTransform = trans3D;
-    [replicatorLayer addSublayer:shape];
+    [replicatorLayer addSublayer:shapeLayer];
     
     return replicatorLayer;
 }
@@ -140,24 +140,24 @@
     NSInteger column = 3;
     CGFloat between = 5.0;
     CGFloat radius = (100 - between * (column - 1))/column;
-    CAShapeLayer *shape = [CAShapeLayer layer];
-    shape.frame = CGRectMake(0, 0, radius, radius);
-    shape.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius, radius)].CGPath;
-    shape.fillColor = [UIColor redColor].CGColor;
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.frame = CGRectMake(0, 0, radius, radius);
+    shapeLayer.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius, radius)].CGPath;
+    shapeLayer.fillColor = [UIColor redColor].CGColor;
     
     CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
     animationGroup.animations = @[[self scaleAnimation1], [self alphaAnimation]];
     animationGroup.duration = 1.0;
     animationGroup.autoreverses = YES;
     animationGroup.repeatCount = HUGE;
-    [shape addAnimation:animationGroup forKey:@"groupAnimation"];
+    [shapeLayer addAnimation:animationGroup forKey:@"groupAnimation"];
     
     CAReplicatorLayer *replicatorLayerX = [CAReplicatorLayer layer];
     replicatorLayerX.frame = CGRectMake(0, 0, 100, 100);
     replicatorLayerX.instanceDelay = 0.3;
     replicatorLayerX.instanceCount = column;
     replicatorLayerX.instanceTransform = CATransform3DTranslate(CATransform3DIdentity, radius+between, 0, 0);
-    [replicatorLayerX addSublayer:shape];
+    [replicatorLayerX addSublayer:shapeLayer];
     
     CAReplicatorLayer *replicatorLayerY = [CAReplicatorLayer layer];
     replicatorLayerY.frame = CGRectMake(0, 0, 100, 100);
@@ -363,3 +363,4 @@
 }
 
 @end
+

@@ -45,7 +45,7 @@
                         (__bridge id)[UIColor yellowColor].CGColor,
                         (__bridge id)[[UIColor yellowColor] colorWithAlphaComponent:0.3].CGColor];
     
-    graLayer.startPoint = CGPointMake(0, 0);//设置渐变方向起点
+    graLayer.startPoint = CGPointMake(0, 0.1);//设置渐变方向起点
     graLayer.endPoint = CGPointMake(1, 0);  //设置渐变方向终点
     graLayer.locations = @[@(0.0), @(0.0), @(0.1)]; //colors中各颜色对应的初始渐变点
     
