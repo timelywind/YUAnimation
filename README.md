@@ -1,7 +1,7 @@
 # YUAnimation
 iOS动画 - 几种特殊的layer动画
 
-#点击[查看简书详细介绍](http://www.jianshu.com/p/321425f47020)
+#点击 [查看简书详细介绍](http://www.jianshu.com/p/321425f47020)
 
 ## 一、复制层动画 CAReplicatorLayer
 ## 效果：
