@@ -93,9 +93,9 @@
 // 波动动画
 + (CALayer *)replicatorLayer_Wave{
     CGFloat between = 5.0;
-    CGFloat radius = (100-2*between)/3;
+    CGFloat radius = (100 - 2 * between)/3;
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-    shapeLayer.frame = CGRectMake(0, (100-radius)/2, radius, radius);
+    shapeLayer.frame = CGRectMake(0, (100 - radius)/2, radius, radius);
     shapeLayer.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius, radius)].CGPath;
     shapeLayer.fillColor = [UIColor redColor].CGColor;
     [shapeLayer addAnimation:[self scaleAnimation1] forKey:@"scaleAnimation"];
@@ -228,11 +228,10 @@
 // 心动画
 + (CALayer *)replicatorLayer_Heart{
     
-    CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer new];
+    CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
     replicatorLayer.frame = CGRectMake(0, 0, 200, 200);
-    //    replicatorLayer.backgroundColor = [UIColor colorWithWhite:0 alpha:0.75].CGColor;
     
-    CALayer *subLayer = [CALayer new];
+    CALayer *subLayer = [CALayer layer];
     subLayer.bounds = CGRectMake(60, 105, 10, 10);
     subLayer.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0].CGColor;
     subLayer.borderColor = [UIColor colorWithWhite:1.0 alpha:1.0].CGColor;
@@ -249,7 +248,7 @@
     //    move.autoreverses = YES;
     [subLayer addAnimation:move forKey:nil];
     
-    replicatorLayer.instanceDelay = 6/50.0;
+    replicatorLayer.instanceDelay = 6 / 50.0;
     replicatorLayer.instanceCount = 50;
     replicatorLayer.instanceColor = [UIColor orangeColor].CGColor;
     replicatorLayer.instanceGreenOffset = -0.03;
@@ -295,10 +294,10 @@
 {
     CGFloat W = 25;
     CGFloat marginX = 10;
-    CGFloat marginY = 15/25.0 * W;
-    CGFloat space = 5/25.0 * W;
+    CGFloat marginY = 15 / 25.0 * W;
+    CGFloat space = 5 / 25.0 * W;
     
-    UIBezierPath *bezierPath = [UIBezierPath new];
+    UIBezierPath *bezierPath = [UIBezierPath bezierPath];
     
     [bezierPath moveToPoint:(CGPointMake(marginX + W * 2, W * 4 + space))];
     [bezierPath addQuadCurveToPoint:CGPointMake(marginX, W * 2) controlPoint:CGPointMake(W, W * 4 - space)];
